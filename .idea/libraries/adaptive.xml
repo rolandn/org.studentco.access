@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="adaptive">
+    <CLASSES>
+      <root url="file://$USER_HOME$/jdk1.8.0_45-64/test" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/jdk1.8.0_45-64/jdk1.8.0_45-64/Microsoft JDBC Driver 6.2 for SQL Server/sqljdbc_6.2/enu/samples/adaptive" />
+      <root url="file://$USER_HOME$/jdk1.8.0_45-64/jdk1.8.0_45-64/Microsoft JDBC Driver 6.2 for SQL Server/sqljdbc_6.2/enu/samples/alwaysencrypted" />
+      <root url="file://$USER_HOME$/jdk1.8.0_45-64/jdk1.8.0_45-64/Microsoft JDBC Driver 6.2 for SQL Server/sqljdbc_6.2/enu/samples/connections" />
+      <root url="file://$USER_HOME$/jdk1.8.0_45-64/jdk1.8.0_45-64/Microsoft JDBC Driver 6.2 for SQL Server/sqljdbc_6.2/enu/samples/datatypes" />
+      <root url="file://$USER_HOME$/jdk1.8.0_45-64/jdk1.8.0_45-64/Microsoft JDBC Driver 6.2 for SQL Server/sqljdbc_6.2/enu/samples/resultsets" />
+      <root url="file://$USER_HOME$/jdk1.8.0_45-64/jdk1.8.0_45-64/Microsoft JDBC Driver 6.2 for SQL Server/sqljdbc_6.2/enu/samples/sparse" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/jdk1.8.0_45-64/test" recursive="false" />
+  </library>
+</component>
