@@ -47,11 +47,28 @@ public class Counter {
 	 */
 	public boolean enter(String account, String code) throws StudentcoException {
 
+		if (nbAttempt < 1)
+			throw new StudentcoException("Carte du premier coup !");
+		// si on est au 3e essai
+		if (nbAttempt == 1) {
+			if (access.verify(account, code)) {
+				nbAttempt = maxAttempt;
+				return true;
+			} else {
+				nbAttempt--;
+				throw new StudentcoException("Carte avalée");
+			}
+		}
 
+		if (access.verify(account, code)) {
+			nbAttempt = maxAttempt;
+			return true;
+		} else {
+			nbAttempt--;
+			return false;
+		}
 
-		throw new StudentcoException(GLOUP);
 	}
-
 	// il faut réécrire la méthode pour que le test passe au vert
 	
 }

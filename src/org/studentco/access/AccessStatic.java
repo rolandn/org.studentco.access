@@ -48,6 +48,7 @@ public class AccessStatic implements Access {
 	public boolean verify(String account, String code) {
 
 		for (int i=0;i<account.length();i++) {
+
 			if(account.equals(code)) return true;
 		}
 		return false;
