@@ -9,7 +9,7 @@ public class AccessStatic implements Access {
 	/**
 	 * les comptes/usernames connus  {"1234", "2345", "3456", "4567", "5678", "6789", "7890"}
 	 */
-	private String[] accounts = {"1", "4", "2", "7", "6", "5", "3"};
+	private String[] accounts = {"1234", "2345", "3456", "4567", "5678", "6789", "7890"};
 		
 	/**
 	 * Les codes/mots de passe correspondants
@@ -47,11 +47,18 @@ public class AccessStatic implements Access {
 	@Override
 	public boolean verify(String account, String code) {
 
-		for (int i=0;i<account.length();i++) {
+		boolean ret = false;
+		int Long = this.accounts.length;
+		for (int i = 0; i < Long; i++) {
 
-			if(account.equals(code)) return true;
+			String boncompte = this.accounts[i];
+			String boncode = this.codes[i];
+			if (account.equals(boncompte) && code.equals(boncode)){
+				ret = true;
+				break;
+			}
 		}
-		return false;
+		return ret;
 	}
 
 	
