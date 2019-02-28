@@ -55,7 +55,6 @@ public class AccessStatic implements Access {
 			String boncode = this.codes[i];
 			if (account.equals(boncompte) && code.equals(boncode)){
 				ret = true;
-				break;
 			}
 		}
 		return ret;
